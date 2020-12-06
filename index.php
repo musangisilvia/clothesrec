@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!--Bootstrap CDN-->
+
+
+    <!--FontAwesome CDN-->
+
+
+    <!--Google Fonts CDN-->
+
+
+
+    <title>Vazzi Me Up | Clothes Recommendation</title>
 </head>
 <body>
     
