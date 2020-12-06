@@ -14,6 +14,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
 
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+
     <title>Vazzi Me Up | Clothes Recommendation</title>
 </head>
 <body>
@@ -45,7 +49,7 @@
 
                 <li class="nav-item">
 
-                    <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Popular </a>
+                    <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Popular <i class="fa fa-star"></i> </a>
 
                 </li>
 
@@ -63,7 +67,61 @@
 
     </nav> <!-- navbar navbar-expand-lg navbar-dark bg-dark finish -->
 
+    <nav aria-label="breadcrumb"> <!-- breadcrumb start -->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+    </nav> <!-- breadcrumb finish -->
 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 profile">
+
+                <h4> User </h4>
+
+                <?php 
+                
+                include('profile.php');
+                
+                ?>
+
+            </div>
+            <div class="col-md-5">
+                <div id="carouselFade" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/cuteblouse.jpeg" class="d-block w-100 imgCaro" alt="cutetop.jpg">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/trouser.jpeg" class="d-block w-100 imgCaro" alt="cutetop.jpg">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/shoe.jpeg" class="d-block w-100 imgCaro" alt="cutetop.jpg">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselFade" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselFade" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 sidebar">
+
+                <h4> Categories </h4>
+
+                <?php
+                
+                include('sidebar.php');
+                
+                ?>
+                
+            </div>
+        </div>
+    </div>
 
 
 
