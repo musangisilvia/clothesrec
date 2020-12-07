@@ -18,7 +18,7 @@
 
     <title>Vazzi | Log In</title>
 </head>
-<body id="forms">
+<body style=" background-color: lightblue; ">
    
     <div class="container"> 
         <div class="col-md-offset-4 col-md-5 logForm shadow-lg p-3 mb-5 bg-white rounded">
