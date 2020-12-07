@@ -19,11 +19,11 @@
 
     <title>Vazzi | Registration </title>
 </head>
-<body>
+<body style=" background-color: lightblue; ">
 
     <div class="container">
-        <div class="col-md-offset-3 col-md-6 regForm">
-            <h2> Register as a Vazzi User </h2>
+        <div class="col-md-offset-3 col-md-6 regForm shadow-lg p-3 mb-5 bg-white rounded">
+            <h2> Register </h2>
 
             <form action="" method="post">
                 <div class="form-group row">
@@ -64,10 +64,12 @@
                     </div>
                 </fieldset>
                 
-                <div class="form-group row">
-                    <div class="col-sm-10">
+                <div class="col-auto">
+                    
                     <button type="submit" name="register" class="btn btn-outline-dark">Sign in</button>
-                    </div>
+
+                    <p class="text-muted">Already have an account? <a href="login.php">Login here ... </a></p>
+
                 </div>
             </form>
 

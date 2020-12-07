@@ -21,7 +21,7 @@
 <body id="forms">
    
     <div class="container"> 
-        <div class="col-md-offset-4 col-md-5 logForm">
+        <div class="col-md-offset-4 col-md-5 logForm shadow-lg p-3 mb-5 bg-white rounded">
 
             <h2>Log In</h2>
 
