@@ -128,3 +128,26 @@ margin:0;
 
 
 /*index styles*/
+
+/*form pages*/
+body.forms {
+    padding-left: 0px;
+}
+.logForm h2 {
+    color: grey;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Sacramento',cursive;
+}
+.logForm {
+    margin: 20% 20% 32% 20%;
+    padding: 50px;
+    border: 0.5px solid grey;
+    border-radius: 10px;
+    box-shadow: 5px 5px 1px solid grey;
+    position: relative;
+
+}
+.logForm button {
+    margin-left: 135px;
+}

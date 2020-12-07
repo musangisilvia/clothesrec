@@ -18,10 +18,13 @@
 
     <title>Vazzi | Log In</title>
 </head>
-<body>
-    
+<body id="forms">
+   
     <div class="container"> 
-        <div class="col-md-offset-4 col-md-4">
+        <div class="col-md-offset-4 col-md-5 logForm">
+
+            <h2>Log In</h2>
+
             <form action=""> <!--log in form start!-->
 
                 <div class="col-auto">
@@ -37,6 +40,8 @@
                         </div>
 
                         <input type="text" class="form-control" id="username" placeholder="Username">
+
+                        <p class="error"></p>
 
                     </div>
 
@@ -56,6 +61,8 @@
 
                         <input type="text" class="form-control" id="password" placeholder="Password">
 
+                        <p class="error"></p>
+
                     </div>
 
                 </div>
@@ -64,8 +71,11 @@
 
                     <button type="submit" name="login" class="btn btn-outline-dark">Log in</button>
 
-                </div>
+                    <p class="text-muted">Don't have an account? <a href="register.php"> Register here ...</a></p>
 
+                </div>
+                
+               
 
             </form>
         </div>
