@@ -23,27 +23,30 @@
 <body>
     <div class="col-md-12 logo">
         <h3 class="logoTitle" style="color:grey; background-color: #f4f4f4; text-align: center; font-family:'Sacramento', cursive; font-size: 50px;"> Vazzi </h3>
+    
+        <form class="form-inline">
+
+            <div class="input-group mb-2 mr-sm-2 search">
+
+                <div class="input-group-prepend">
+
+                    <div class="input-group-text"><i class="fa fa-search"></i></div>
+
+                </div>
+
+                <input type="text" class="form-control" id="searchClothes" placeholder="Search">
+
+            </div>
+
+        </form>
+    
     </div>
 
     <div class="container">
         <div class="row top">
             
 
-                <!-- <form class="form-inline">
-
-                    <div class="input-group mb-2 mr-sm-2 col-md-offset-9">
-
-                        <div class="input-group-append">
-
-                            <div class="input-group-text"><i class="fa fa-search"></i></div>
-
-                        </div>
-
-                        <input type="text" class="form-control" id="searchClothes" placeholder="Search">
-
-                    </div>
-
-                </form> -->
+                <!--  -->
             </div>
         </div>
         <div class="row">
@@ -68,21 +71,15 @@
                         </ul>
                 </nav>
 
-                <div class="profileviews">
+                <div class="row profileviews">
 
                     <div class="col-md-4">
 
-                        <div class="container">
+                        <div class="box">
 
-                            <div class="box">
+                            <div id="favourites">
 
-                                <div id="favourites">
-
-                                    <h3 style="">Favourites</h3>
-
-                                    <img src="images/cuteblouse.jpeg" alt="" class="img-responsive">
-
-                                </div>
+                                <img src="images/cuteblouse.jpeg" alt="" class="img-responsive">
 
                             </div>
 
@@ -90,7 +87,53 @@
 
                     </div>
 
+                    <div class="col-md-8">
+
+                        <div class="boxdesc">
+
+                            <h4> Purses </h4>
+
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet </p>
+
+                        </div>
+
+                    </div>
+
                 </div>
+
+                <div class="row profileviews">
+                    
+                    <div class="col-md-8">
+
+                        <div class="boxdesc">
+
+                            <h4> Purses </h4>
+
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="box">
+
+                            <div id="favourites">
+
+                                <img src="images/cuteblouse.jpeg" alt="" class="img-responsive">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    
+
+                </div>
+
+
 
             </div>
 

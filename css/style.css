@@ -64,13 +64,20 @@ margin:0;
 .profileviews{
     color:grey;
     top:50%;
-    left:50%;
-    text-align:center;
+    
     border-radius:20px;
     font-size:2em;
     font-weight:bold;
+    margin-right: 15px;
+    margin-left: 15px;
 }
-
+.profileviews .boxdesc p , .profileviews .boxdesc h4 {
+    margin-top: 60px;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: justify;
+    box-shadow: 2px 2px 0 solid gray;
+}
 
 .logo {
     width: 100%;
@@ -80,6 +87,9 @@ margin:0;
     border-radius: 100px;
     width: 300px;
     height: auto;
+}
+.logo form.search {
+    margin: -50px;
 }
 
 /*index styles*/
