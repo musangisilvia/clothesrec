@@ -151,3 +151,14 @@ body.forms {
 .logForm button {
     margin-left: 135px;
 }
+
+.regForm h2 {
+    color: grey;
+    text-align: center;
+    font-weight: bold;
+}
+.regForm {
+    margin:10% 10% 22% 10%;
+    padding: 40px;
+    border: 0.5rem solid grey;
+}
