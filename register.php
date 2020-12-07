@@ -18,6 +18,8 @@
 
 
     <title>Vazzi | Registration </title>
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+</head>
 </head>
 <body style=" background-color: lightblue; ">
 

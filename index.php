@@ -19,6 +19,7 @@
 
 
     <title>Vazzi Me Up | Clothes Recommendation</title>
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
 </head>
 <body>
 
