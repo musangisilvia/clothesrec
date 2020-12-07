@@ -62,7 +62,7 @@
 
                 <div class="col-auto">
 
-                    <button class="btn btn-outline-info">Log in</button>
+                    <button type="submit" name="login" class="btn btn-outline-dark">Log in</button>
 
                 </div>
 
