@@ -48,21 +48,21 @@
 
                 <nav class="menu" tabindex="0">
                     <div class="smartphone-menu-trigger"></div>
-                        <header class="avatar">
+                    <header class="avatar">
 
-                            <img src="images/musmus.jpg" />
+                        <img src="images/musmus.jpg" />
 
-                            <h2 style="font-family:'Sacramento', cursive;"> Musangi  </h2>
+                        <h2 style="font-family:'Sacramento', cursive;"> Musangi  </h2>
 
-                        </header>
+                    </header>
 
-                        <ul>
-                            <li tabindex="0" class="active" ><span>Dashboard </span><i class="fa fa-dashboard"></i></li>
-                            <li tabindex="0" ><span>Explore </span><i class="fa fa-search"></i></li>
-                            <li tabindex="0" ><span>Favorites </span><i class="fa fa-heart"></i></li>
-                            <li tabindex="0" ><span>Popular </span><i class="fa fa-star"></i></li>
-                            <li tabindex="0" ><span>Log Out </span><i class="fa fa-sign-out"></i></li>
-                        </ul>
+                    <ul>
+                        <li tabindex="0" ><a href="index.php?dashboard" class="active"><span>Dashboard </span><i class="fa fa-dashboard"></i></a></li>
+                        <li tabindex="0" ><a href="index.php?explore"><span>Explore </span><i class="fa fa-search"></i></a></li>
+                        <li tabindex="0" ><a href="index.php?fave"><span>Favorites </span><i class="fa fa-heart"></i></a></li>
+                        <li tabindex="0" ><a href="index.php?popular"><span>Popular </span><i class="fa fa-star"></i></a></li>
+                        <li tabindex="0" ><a href="logout.php"><span>Log Out </span><i class="fa fa-sign-out"></i></a></li>
+                    </ul>
                 </nav>
 
                 <div class="row profileviews">

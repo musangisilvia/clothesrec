@@ -52,10 +52,19 @@ margin:0;
     transition:all 0.15s linear;
     cursor:pointer;
 }
-    
-.menu ul li:hover{
-    background-color: grey;
+
+.menu ul li a {
+    color: #fff;
+    font-family: 'Sacramento', cursive;
 }
+
+.menu ul li a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+.menu ul li a:active , .menu ul li:hover {
+    background-color: grey;
+}    
     
 .menu ul li:focus{
     outline:none;
