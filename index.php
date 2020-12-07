@@ -28,6 +28,7 @@
           
             <nav class="navbar navbar-light bg-light">
                 <a class="navbar-brand"style="font-family:'Sacramento', cursive; color:grey;font-size:40px; "> Vazzi </a>
+                <a href="login.php" class="navbar-brand"style="font-family:'Sacramento', cursive; color:grey;font-size:26px; float: right; "> Sign In | Sign Up </a>
                 <form class="form-inline">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button alt="Search" class="btn btn-outline-dark my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
