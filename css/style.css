@@ -63,13 +63,13 @@ margin:0;
 
 .profileviews{
     color:grey;
+    background-color: #f4f4f4;
     top:50%;
-    
+    margin: 15px;
+    padding: 10px;
     border-radius:20px;
     font-size:2em;
     font-weight:bold;
-    margin-right: 15px;
-    margin-left: 15px;
 }
 .profileviews .boxdesc p , .profileviews .boxdesc h4 {
     margin-top: 60px;
@@ -84,7 +84,7 @@ margin:0;
 }
 
 .box #favourites img {
-    border-radius: 100px;
+    border-radius: 200px;
     width: 300px;
     height: auto;
 }

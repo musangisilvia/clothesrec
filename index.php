@@ -102,7 +102,7 @@
                 </div>
 
                 <div class="row profileviews">
-                    
+
                     <div class="col-md-8">
 
                         <div class="boxdesc">
@@ -130,6 +130,36 @@
                     </div>
 
                     
+
+                </div>
+
+                <div class="row profileviews">
+
+                    <div class="col-md-4">
+
+                        <div class="box">
+
+                            <div id="favourites">
+
+                                <img src="images/cuteblouse.jpeg" alt="" class="img-responsive">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-8">
+
+                        <div class="boxdesc">
+
+                            <h4> Purses </h4>
+
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet </p>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
