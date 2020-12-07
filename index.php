@@ -21,27 +21,21 @@
     <title>Vazzi Me Up | Clothes Recommendation</title>
 </head>
 <body>
-    <div class="col-md-12 logo">
-        <h3 class="logoTitle" style="color:grey; background-color: #f4f4f4; text-align: center; font-family:'Sacramento', cursive; font-size: 50px;"> Vazzi </h3>
-    
-        <form class="form-inline">
 
-            <div class="input-group mb-2 mr-sm-2 search">
+    <header>
 
-                <div class="input-group-prepend">
-
-                    <div class="input-group-text"><i class="fa fa-search"></i></div>
-
-                </div>
-
-                <input type="text" class="form-control" id="searchClothes" placeholder="Search">
-
-            </div>
-
-        </form>
-    
-    </div>
-
+        <div class="col-md-12 logo">
+          
+            <nav class="navbar navbar-light bg-light">
+                <a class="navbar-brand"style="font-family:'Sacramento', cursive; color:grey;font-size:40px; "> Vazzi </a>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button alt="Search" class="btn btn-outline-dark my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </nav>
+        
+        </div>
+    </header>
     <div class="container">
         <div class="row top">
             
@@ -63,7 +57,7 @@
                         </header>
 
                         <ul>
-                            <li tabindex="0" ><span>Dashboard </span><i class="fa fa-dashboard"></i></li>
+                            <li tabindex="0" class="active" ><span>Dashboard </span><i class="fa fa-dashboard"></i></li>
                             <li tabindex="0" ><span>Explore </span><i class="fa fa-search"></i></li>
                             <li tabindex="0" ><span>Favorites </span><i class="fa fa-heart"></i></li>
                             <li tabindex="0" ><span>Popular </span><i class="fa fa-star"></i></li>
@@ -191,19 +185,56 @@
                     </a>
                 </div>
             </div> -->
-            <div class="col-md-offset-10 sidebar">
 
-                <h4 style="color:grey;"> Categories </h4>
+            
+                <div class="col-md-2 sidebar">
 
-                <?php
-                
-                include('sidebar.php');
-                
-                ?>
-                
-            </div>
+                    <div class="cats">
+
+                        <h4 style="color:grey;"> Categories </h4>
+
+                        
+                        <ul class="list-group"> <!---->
+                            <li class="list-group-item list-group-item-action list-group-item-light"><a href="#">Jackets</a></li>
+                            <li class="list-group-item list-group-item-action list-group-item-light"><a href="#">Hoodies</a></li>
+                            <li class="list-group-item list-group-item-action list-group-item-light"><a href="#">Pants</a></li>
+                            <li class="list-group-item list-group-item-action list-group-item-light"><a href="#">Shoes</a></li>
+                        </ul> <!---->
+
+                    </div>
+
+                    <div class="tags">
+                        
+                        <h4>Tags</h4>
+
+                        <ul style="color: grey;">
+                            <li> <a class="btn btn-outline-dark my-2 my-sm-0">#shoes</a></li>
+                            <li> <a class="btn btn-outline-dark my-2 my-sm-0">#clothes</a></li>
+                            <li> <a class="btn btn-outline-dark my-2 my-sm-0">#dressup</a></li>
+                            <li> <a class="btn btn-outline-dark my-2 my-sm-0">#lgfg</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="col-auto news">
+                        <label class="sr-only" for="newsletter">News Letter</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                            <div class="input-group-text"><i class="fa fa-envelope"></i></div>
+                            </div>
+                            <input type="text" class="form-control" id="newsletter" placeholder="Subscribe">
+                        </div>
+                    </div>
+                    
+                </div>
         </div>
 
+    </div>
+
+    <div style="color: grey; background-color: #f4f4f4;">
+        <footer>
+            <p style="text-align: center;"> Vazzi &copy; 2020 </p>
+        </footer>
     </div>
 
 

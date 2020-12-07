@@ -67,7 +67,6 @@ margin:0;
     top:50%;
     margin: 15px;
     padding: 10px;
-    border-radius:20px;
     font-size:2em;
     font-weight:bold;
 }
@@ -91,5 +90,33 @@ margin:0;
 .logo form.search {
     margin: -50px;
 }
+.sidebar {
+    background-color: #f4f4f4;
+    color: grey;
+    margin-top: 15px;
+    padding-top: 10px;
+    width: inherit;
+}
+.sidebar .tags , .sidebar .news {
+    margin-top: 15px;
+    padding-top: 10px;
+}
+.sidebar .tags ul li {
+    list-style: none;
+    text-transform: uppercase;
+    margin: 5px 3px 5px 3px  ;
+}
+.sidebar .tags ul li a {
+    font-size: 0.6rem;
+    
+}
+.sidebar .cats ul li {
+    list-style: none;
+}
+.sidebar .cats ul li a {
+    text-decoration: none;
+    color: grey;
+}
+
 
 /*index styles*/
