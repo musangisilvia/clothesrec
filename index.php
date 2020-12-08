@@ -23,126 +23,128 @@
 </head>
 <body>
 
-    <?php
-    
-        include('profile.php');
-    
-    ?>    
-            <div class="container">
-                <div class="row profileviews">
+        <?php
+        
+            include('profile.php');
+        
+        ?>
 
-                    <div class="col-md-2">
+<div class="row">
+        
+    <div class="col-md-9">
+        <div class="row profileviews">
 
-                        <div class="box">
+            <div class="col-md-3">
 
-                            <div id="favourites">
+                <div class="box">
 
-                                <img src="images/cuteblouse.jpeg" alt="" class="img-responsive">
+                    <div id="favourites">
 
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-5">
-
-                        <div class="boxdesc">
-
-                            <h4> Purses </h4>
-
-                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet </p>
-
-                        </div>
+                        <img src="images/cuteblouse.jpeg" alt="" class="img-responsive">
 
                     </div>
 
                 </div>
-
-                <div class="row profileviews">
-
-                    <div class="col-md-8">
-
-                        <div class="boxdesc">
-
-                            <h4> Purses </h4>
-
-                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet </p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-2">
-
-                        <div class="box">
-
-                            <div id="favourites">
-
-                                <img src="images/cuteblouse.jpeg" alt="" class="img-responsive">
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    
-
-                </div>
-
-                <div class="row profileviews">
-
-                    <div class="col-md-2">
-
-                        <div class="box">
-
-                            <div id="favourites">
-
-                                <img src="images/cuteblouse.jpeg" alt="" class="img-responsive">
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-8">
-
-                        <div class="boxdesc">
-
-                            <h4> Purses </h4>
-
-                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
 
             </div>
-            
-            <?php
-            
-            include('sidebar.php');
-            
-            ?>    
+
+            <div class="col-md-6">
+
+                <div class="boxdesc">
+
+                    <h4> Purses </h4>
+
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet </p>
+
+                </div>
+
+            </div>
 
         </div>
 
+        <div class="row profileviews">
+
+            <div class="col-offset-3 col-md-6">
+
+                <div class="boxdesc">
+
+                    <h4> Purses </h4>
+
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="box">
+
+                    <div id="favourites">
+
+                        <img src="images/cuteblouse.jpeg" alt="" class="img-responsive">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row profileviews">
+
+            <div class="col-md-3">
+
+                <div class="box">
+
+                    <div id="favourites">
+
+                        <img src="images/cuteblouse.jpeg" alt="" class="img-responsive">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <div class="boxdesc">
+
+                    <h4> Purses </h4>
+
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet </p>
+
+                </div>
+
+            </div>
+
+        </div>
     </div>
 
-    <?php
+    <div class="col-md-3 sidebar">
     
-        include('footer.php');
+        <?php
     
-    ?>
+            include('sidebar.php');
+            
+        ?>
+    
+    </div>
+</div>         
 
+        <div class="row">
+        
+            <?php
 
+                include('footer.php');
 
+            ?>
+        
+        </div>
+
+   
 
     <!--Bootstrap JS CDN-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

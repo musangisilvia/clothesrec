@@ -13,7 +13,7 @@
     </div>
 </header>
 <div class="row">
-    <div class="col-md-9 profile">
+    <div class="col-md-3 profile">
 
         <nav class="menu" tabindex="0">
             <div class="smartphone-menu-trigger"></div>
