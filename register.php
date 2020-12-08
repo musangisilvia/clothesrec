@@ -27,23 +27,53 @@
         <div class="col-md-offset-3 col-md-6 regForm shadow-lg p-3 mb-5 bg-white rounded">
             <h2> Register </h2>
 
-            <form action="" method="post">
+            <?php
+
+                include('includes/db.php');
+            
+                if(isset($_POST['register'])){
+
+                    $fname = $_POST['fname'];
+                    $lname = $_POST['lname'];
+                    $email = $_POST['email'];
+                    $passw = $_POST['password'];
+                    $gender = $_POST['gender'];
+                    $
+        
+                }
+            
+            ?>
+
+            <form action="#" method="post">
+                <p class="error"></p>
                 <div class="form-group row">
-                    <label for="email" class="col-sm-2 col-form-label" style="color:grey;">Email</label>
-                    <div class="col-sm-10">
+                    <label for="fname" class="col-sm-3 col-form-label" style="color:grey;">First Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="fname">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="lname" class="col-sm-3 col-form-label" style="color:grey;">Last Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="lname">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="email" class="col-sm-3 col-form-label" style="color:grey;">Email</label>
+                    <div class="col-sm-9">
                         <input type="email" class="form-control" id="email">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="password" class="col-sm-2 col-form-label" style="color:grey;">Password</label>
-                    <div class="col-sm-10">
-                    <input type="password" class="form-control" id="password">
+                    <label for="password" class="col-sm-3 col-form-label" style="color:grey;">Password</label>
+                    <div class="col-sm-9">
+                    <input type="password" class="form-control" id="password" required>
                     </div>
                 </div>
                 <fieldset class="form-group">
                     <div class="row">
-                        <legend class="col-form-label col-sm-2 pt-0" style="color:grey;">Gender</legend>
-                        <div class="col-sm-10">
+                        <legend class="col-form-label col-sm-3 pt-0" style="color:grey;">Gender</legend>
+                        <div class="col-sm-9">
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="gender" id="gender1" value="male" checked>
                                 <label class="form-check-label" for="gender1" style="color:grey;">
@@ -65,12 +95,17 @@
                         </div>
                     </div>
                 </fieldset>
+                <div class="mb-3">
+                    <label for="picture" class="col-form-label" style="color:grey;"> Your Picture </label>
+                    <input class="form-control" type="file" id="picture">
+                </div>
+
                 
                 <div class="col-auto">
                     
                     <button type="submit" name="register" class="btn btn-outline-dark">Sign in</button>
 
-                    <p class="text-muted">Already have an account? <a href="login.php">Login here ... </a></p>
+                    <p class="text-muted" style="text-align:center;">Already have an account? <a href="login.php">Login here ... </a></p>
 
                 </div>
             </form>
