@@ -25,7 +25,7 @@
 
         <?php
         
-            include('profile.php');
+            include('includes/profile.php');
         
         ?>
 
@@ -127,7 +127,7 @@
         
             <?php
         
-                include('sidebar.php');
+                include('includes/sidebar.php');
                 
             ?>
         
@@ -139,7 +139,7 @@
         <div class="col-md-12">
             <?php
 
-                include('footer.php');
+                include('includes/footer.php');
 
             ?>
         </div>
