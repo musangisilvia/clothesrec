@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content=" width=device-width, initial-scale=1.0">
 
     <!--Bootstrap CSS CDN-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -27,11 +27,53 @@
 
             <h2>Log In</h2>
 
-            <form action=""> <!--log in form start!-->
+            <?php
+            
+                include('includes/db.php');
+
+                if(isset($_POST['login'])){
+
+                    $email = $_POST['email'];
+                    $password = $_POST['password'];
+
+                    $get_user = "SELECT * FROM user WHERE user_email = '$email' AND user_password = '$password'";
+
+                    $run_user = mysqli_query($con,$get_user);
+
+                    $row_user = mysqli_num_rows($run_user);
+
+                    if($row_user == 1) {
+
+                        $get_session = "SELECT * FROM user WHERE user_email = '$email' AND user_password = '$password'";
+
+                        $run_session = mysqli_query($con,$query);
+
+                        $row_session = mysqli_fetch_array($run_session);
+
+                        $_SESSION['name'] = $row_session['user_firstname'].'Vazzarian';
+
+                        echo "<script>alert('You have logged in successfully')</script>";
+
+                        echo "<script>window.open('index.php','_self')</script>";
+
+                    } else {
+
+                        echo "<script>alert('Register first')</script>";
+
+                    } 
+                } else {
+                    
+                    echo "<script>alert('All fields must be filled;)</script>";
+
+                }
+            
+            ?>
+
+            <form action="login.php" method="post"> <!--log in form start!-->
 
                 <div class="col-auto">
 
-                    <label class="sr-only" for="username">Username</label>
+                    <label class="sr-only" for="email">Email</label>
 
                     <div class="input-group mb-2">
 
@@ -41,7 +83,7 @@
 
                         </div>
 
-                        <input type="text" class="form-control" id="username" placeholder="Username">
+                        <input type="text" class="form-control" name="email" placeholder="Email">
 
                         <p class="error"></p>
 
@@ -61,7 +103,7 @@
 
                         </div>
 
-                        <input type="text" class="form-control" id="password" placeholder="Password">
+                        <input type="password" class="form-control" name="password" placeholder="Password">
 
                         <p class="error"></p>
 
