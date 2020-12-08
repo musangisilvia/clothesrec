@@ -73,8 +73,8 @@ margin:0;
     color:grey;
     background-color: #f4f4f4;
     top:50%;
-    margin: 15px;
-    padding: 5px;
+    margin: 15px 10px 0 30px;
+    padding: 10px;
     font-weight:bold;
 }
 .profileviews .boxdesc p , .profileviews .boxdesc h4 {

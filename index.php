@@ -29,120 +29,121 @@
         
         ?>
 
-<div class="row">
-        
-    <div class="col-md-9">
-        <div class="row profileviews">
-
-            <div class="col-md-3">
-
-                <div class="box">
-
-                    <div id="favourites">
-
-                        <img src="images/cuteblouse.jpeg" alt="" class="img-responsive">
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="col-md-6">
-
-                <div class="boxdesc">
-
-                    <h4> Purses </h4>
-
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="row profileviews">
-
-            <div class="col-offset-3 col-md-6">
-
-                <div class="boxdesc">
-
-                    <h4> Purses </h4>
-
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet </p>
-
-                </div>
-
-            </div>
-
-            <div class="col-md-3">
-
-                <div class="box">
-
-                    <div id="favourites">
-
-                        <img src="images/cuteblouse.jpeg" alt="" class="img-responsive">
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="row profileviews">
-
-            <div class="col-md-3">
-
-                <div class="box">
-
-                    <div id="favourites">
-
-                        <img src="images/cuteblouse.jpeg" alt="" class="img-responsive">
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="col-md-6">
-
-                <div class="boxdesc">
-
-                    <h4> Purses </h4>
-
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet </p>
-
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-
-    <div class="col-md-3 sidebar">
-    
-        <?php
-    
-            include('sidebar.php');
+    <div class="row">
             
-        ?>
-    
-    </div>
-</div>         
+        <div class="col-md-9">
+            <div class="row profileviews shadow-lg p-3 mb-5 bg-white rounded">
 
-        <div class="row">
+                <div class="col-md-3">
+
+                    <div class="box">
+
+                        <div id="favourites">
+
+                            <img src="images/cuteblouse.jpeg" alt="" class="img-responsive">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="boxdesc">
+
+                        <h4> Purses </h4>
+
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row profileviews shadow-lg p-3 mb-5 bg-white rounded">
+
+                <div class="col-md-6">
+
+                    <div class="boxdesc">
+
+                        <h4> Purses </h4>
+
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="box">
+
+                        <div id="favourites">
+
+                            <img src="images/cuteblouse.jpeg" alt="" class="img-responsive">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row profileviews shadow-lg p-3 mb-5 bg-white rounded">
+
+                <div class="col-md-3">
+
+                    <div class="box">
+
+                        <div id="favourites">
+
+                            <img src="images/cuteblouse.jpeg" alt="" class="img-responsive">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="boxdesc">
+
+                        <h4> Purses </h4>
+
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-3 sidebar">
         
+            <?php
+        
+                include('sidebar.php');
+                
+            ?>
+        
+        </div>
+    </div>         
+
+    <div class="row">
+
+        <div class="col-md-12">
             <?php
 
                 include('footer.php');
 
             ?>
-        
         </div>
+    </div>
 
    
 
