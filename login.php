@@ -50,9 +50,11 @@
 
                         $row_session = mysqli_fetch_array($run_session);
 
-                        $_SESSION['name'] = $row_session['user_firstname'].'Vazzarian';
+                        $_SESSION['name'] = $row_session['user_firstname'];
 
-                        echo "<script>alert('You have logged in successfully')</script>";
+                        $username = $_SESSION['name'];
+
+                        echo "<script>alert('You have logged in successfully $username ')</script>";
 
                         echo "<script>window.open('index.php','_self')</script>";
 

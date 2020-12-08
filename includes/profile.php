@@ -21,7 +21,7 @@
 
                 <img src="images/musmus.jpg" />
 
-                <h2 style="font-family:'Sacramento', cursive;"> Musangi  </h2>
+                <h2 style="font-family:'Sacramento', cursive;"> Mus </h2>
 
             </header>
 

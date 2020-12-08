@@ -1,3 +1,16 @@
+<?php
+
+    session_start();
+
+    if(isset($_SESSION['name'])){
+
+        $username = $_SESSION['name'];
+
+    }
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
