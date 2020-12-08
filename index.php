@@ -28,10 +28,10 @@
         include('profile.php');
     
     ?>    
-
+            <div class="container">
                 <div class="row profileviews">
 
-                    <div class="col-md-4">
+                    <div class="col-md-2">
 
                         <div class="box">
 
@@ -45,7 +45,7 @@
 
                     </div>
 
-                    <div class="col-md-8">
+                    <div class="col-md-5">
 
                         <div class="boxdesc">
 
@@ -73,7 +73,7 @@
 
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-2">
 
                         <div class="box">
 
@@ -93,7 +93,7 @@
 
                 <div class="row profileviews">
 
-                    <div class="col-md-4">
+                    <div class="col-md-2">
 
                         <div class="box">
 
