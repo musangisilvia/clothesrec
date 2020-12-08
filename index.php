@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/style.css">
 
 
-    <title>Vazzi Me Up | Clothes Recommendation</title>
+    <title>Vazzi | Clothes Recommendation</title>
     <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
 </head>
 <body>
