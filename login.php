@@ -27,7 +27,7 @@
 
             <h2>Log In</h2>
 
-            <form method="post" action="index.php"> <!--log in form start!-->
+            <form method="post" action="login.php"> <!--log in form start!-->
 
                 <div class="col-auto">
 
@@ -95,7 +95,7 @@
 
         if(empty($email) || empty($password)) {
 
-            echo "<script>alert('Fill out all fields!')</script>";
+            echo "<script>alert('Fill out all fields! ')</script>";
 
         } else {
 
@@ -115,10 +115,7 @@
 
             } else {
 
-                echo "<script>alert('You need to register first')</script>";
-
-                echo "<script>window.open('register.php','_self')</script>";
-
+                echo "<script>alert('Incorrect email or password')</script>";
             }
 
         }
