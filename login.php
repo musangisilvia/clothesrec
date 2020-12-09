@@ -46,7 +46,7 @@
 
                         $get_session = "SELECT * FROM user WHERE user_email = '$email' AND user_password = '$password'";
 
-                        $run_session = mysqli_query($con,$query);
+                        $run_session = mysqli_query($con,$get_session);
 
                         $row_session = mysqli_fetch_array($run_session);
 
