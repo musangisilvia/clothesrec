@@ -27,51 +27,7 @@
 
             <h2>Log In</h2>
 
-            <?php
-            
-                include('includes/db.php');
-
-                if(isset($_POST['login'])){
-
-                    $email = $_POST['email'];
-                    $password = $_POST['password'];
-
-                    $get_user = "SELECT * FROM user WHERE user_email = '$email' AND user_password = '$password'";
-
-                    $run_user = mysqli_query($con,$get_user);
-
-                    $row_user = mysqli_num_rows($run_user);
-
-                    if($row_user == 1) {
-
-                        $get_session = "SELECT * FROM user WHERE user_email = '$email' AND user_password = '$password'";
-
-                        $run_session = mysqli_query($con,$get_session);
-
-                        $row_session = mysqli_fetch_array($run_session);
-
-                        $_SESSION['name'] = $row_session['user_firstname'];
-
-                        $username = $_SESSION['name'];
-
-                        echo "<script>alert('You have logged in successfully $username ')</script>";
-
-                        echo "<script>window.open('index.php','_self')</script>";
-
-                    } else {
-
-                        echo "<script>alert('Register first')</script>";
-
-                    } 
-                } else {
-                    
-                    echo "<script>alert('All fields must be filled;)</script>";
-
-                }
-            
-            ?>
-
-            <form action="login.php" method="post"> <!--log in form start!-->
+            <form method="post" action="index.php"> <!--log in form start!-->
 
                 <div class="col-auto">
 
@@ -126,6 +82,51 @@
             </form>
         </div>
     </div>
+
+    <?php
+            
+    include('includes/db.php');
+
+    if(isset($_POST['login'])){
+
+        $email = $_POST['email'];
+
+        $password = $_POST['password'];
+
+        if(empty($email) || empty($password)) {
+
+            echo "<script>alert('Fill out all fields!')</script>";
+
+        } else {
+
+            $get_user = "SELECT * FROM user WHERE user_email = '$email' AND user_password = '$password'";
+
+            $run_user = mysqli_query($con,$get_user);
+
+            $check_user = mysqli_num_rows($run_user);
+
+            if($check_user==1){
+
+                $_SESSION['email'] = $email;
+
+                echo "<script>alert('Welcome, you have logged in.')</script>";
+
+                echo "<script>window.open('index.php','_self')</script>";
+
+            } else {
+
+                echo "<script>alert('You need to register first')</script>";
+
+                echo "<script>window.open('register.php','_self')</script>";
+
+            }
+
+        }
+         
+    }
+
+?>
+
 
 </body>
 </html>

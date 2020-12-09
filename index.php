@@ -2,15 +2,14 @@
 
     session_start();
 
-    if(!isset($_SESSION['name'])){
+    if(!isset($_SESSION['email'])){
 
-        $username = 'GUEST';
+        echo "<script>window.open('action.php','_self')</script>";
 
     } else {
 
-        $username = $_SESSION['name'];
-
-    }
+        include('includes/db.php');
+        
 
 ?>
 
@@ -62,7 +61,34 @@
 
                     <img src="images/musmus.jpg" />
 
-                    <h2 style="font-family:'Sacramento', cursive;"> <?php echo $username; ?> </h2>
+                    <h2 style="font-family:'Sacramento', cursive;">
+                     <?php
+                     
+                     if(!isset($_SESSION['email'])){
+
+                        echo "Guest";
+
+                     } else {
+
+                        $usermail = $_SESSION['email'];
+
+                        $get_name = "SELECT * FROM user WHERE user_email = '$usermail'";
+
+                        $run_name = mysqli_query($con,$get_name);
+
+                        $row_name = mysqli_fetch_array($run_name);
+
+                        $userfname = $row_name['user_firstname'];
+
+                        $userlname = $row_name['user_lastname'];
+
+                        echo $userfname . $userlname ;
+
+                     }
+                     
+                     ?>
+                     
+                     </h2>
 
                 </header>
 
@@ -71,7 +97,21 @@
                     <li tabindex="0" ><a href="index.php?explore"><span>Explore </span><i class="fa fa-search"></i></a></li>
                     <li tabindex="0" ><a href="index.php?fave"><span>Favorites </span><i class="fa fa-heart"></i></a></li>
                     <li tabindex="0" ><a href="index.php?popular"><span>Popular </span><i class="fa fa-star"></i></a></li>
-                    <li tabindex="0" ><a href="logout.php"><span>Log Out </span><i class="fa fa-sign-out"></i></a></li>
+                    <li tabindex="0" ><a href="logout.php"><span>
+                        <?php
+
+                            if(!isset($_SESSION['email'])){
+
+                                echo "Log in";
+
+                            }else {
+
+                                echo "Log out";
+ 
+                            }                        
+
+                        ?>                    
+                     </span><i class="fa fa-sign-out"></i></a></li>
                 </ul>
             </nav>
         </div>
@@ -201,3 +241,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+
+<?php 
+
+}
+
+?>
