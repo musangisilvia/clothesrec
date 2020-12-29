@@ -35,23 +35,25 @@
 
                     include('includes/db.php');
 
-                    $email = $_SESSION['email'];
-
-                    $getinfo = "SELECT * FROM `user` WHERE `user_email` = '$email'";
-
-                    $runinfo = mysqli_query($con,$getinfo);
-
-                    $row = mysqli_fetch_array($runinfo);
-
-                    $pic = $row['user_picture'];
-
-                    $name = $row['user_firstname'];
-
                     if(isset($_SESSION['email'])){
+
+                        $email = $_SESSION['email'];
+
+                        $getinfo = "SELECT * FROM `user` WHERE `user_email` = '$email'";
+
+                        $runinfo = mysqli_query($con,$getinfo);
+
+                        $row = mysqli_fetch_array($runinfo);
+
+                        $pic = $row['user_picture'];
+
+                        $name = $row['user_firstname'];
 
                         echo "<h4 class='navbar-brand' style='font-family: Sacramento, cursive; color:grey;font-size:26px; float: right;'>Welcome : $email </h4>";
 
                     } else {
+
+                        $pic = "musmus.jpg";
 
                         echo "<a href='login.php' class='navbar-brand' style='font-family:'Sacramento', cursive; color:grey;font-size:26px; float: right;' > Sign In | Sign Up</a>";
                     }    
