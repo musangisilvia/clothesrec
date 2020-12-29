@@ -27,7 +27,7 @@
 
             <h2>Log In</h2>
 
-            <form method="post" action="login.php"> <!--log in form start!-->
+            <form method="post" action="index.php"> <!--log in form start!-->
 
                 <div class="col-auto">
 
