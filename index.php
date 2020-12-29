@@ -1,18 +1,3 @@
-<?php
-
-    session_start();
-
-    if(!isset($_SESSION['email'])){
-
-        echo "<script>window.open('action.php','_self')</script>";
-
-    } else {
-
-        include('includes/db.php');
-        
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,7 +28,37 @@
             
             <nav class="navbar navbar-light bg-light">
                 <a class="navbar-brand"style="font-family:'Sacramento', cursive; color:grey;font-size:40px; "> Vazzi </a>
-                <a href="login.php" class="navbar-brand"style="font-family:'Sacramento', cursive; color:grey;font-size:26px; float: right; "> Sign In | Sign Up </a>
+
+                <?php
+
+                    session_start();
+
+                    include('includes/db.php');
+
+                    $email = $_SESSION['email'];
+
+                    $getinfo = "SELECT * FROM `user` WHERE `user_email` = '$email'";
+
+                    $runinfo = mysqli_query($con,$getinfo);
+
+                    $row = mysqli_fetch_array($runinfo);
+
+                    $pic = $row['user_picture'];
+
+                    $name = $row['user_firstname'];
+
+                    if(isset($_SESSION['email'])){
+
+                        echo "<h4 class='navbar-brand' style='font-family: Sacramento, cursive; color:grey;font-size:26px; float: right;'>Welcome : $email </h4>";
+
+                    } else {
+
+                        echo "<a href='login.php' class='navbar-brand' style='font-family:'Sacramento', cursive; color:grey;font-size:26px; float: right;' > Sign In | Sign Up</a>";
+                    }    
+
+                ?>
+
+                
                 <form class="form-inline">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button alt="Search" class="btn btn-outline-dark my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
@@ -59,34 +74,9 @@
                 <div class="smartphone-menu-trigger"></div>
                 <header class="avatar">
 
-                    <img src="images/musmus.jpg" />
+                    <img src="images/<?php echo $pic;?>" />
 
                     <h2 style="font-family:'Sacramento', cursive;">
-                     <?php
-                     
-                     if(!isset($_SESSION['email'])){
-
-                        echo "Guest";
-
-                     } else {
-
-                        $usermail = $_SESSION['email'];
-
-                        $get_name = "SELECT * FROM user WHERE user_email = '$usermail'";
-
-                        $run_name = mysqli_query($con,$get_name);
-
-                        $row_name = mysqli_fetch_array($run_name);
-
-                        $userfname = $row_name['user_firstname'];
-
-                        $userlname = $row_name['user_lastname'];
-
-                        echo $userfname . $userlname ;
-
-                     }
-                     
-                     ?>
                      
                      </h2>
 
@@ -241,11 +231,3 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
-
-
-
-<?php 
-
-}
-
-?>
