@@ -110,98 +110,66 @@
     </div>
 
     <div class="row">
-            
+
         <div class="col-md-9">
 
-            <div class="row profileviews shadow-lg p-3 mb-5 bg-white rounded">
+            <?php
+            
+                include('includes/db.php');
 
-                <div class="col-md-3">
+                $getproducts = "SELECT * FROM `products` WHERE `product_priority` = 1 LIMIT 3";
 
-                    <div class="box">
+                $runproducts = mysqli_query($con,$getproducts);
 
-                        <div id="favourites">
+                while($rowproducts = mysqli_fetch_array($runproducts)){
 
-                            <img src="images/cuteblouse.jpeg" alt="" class="img-responsive">
+                    $prodid = $rowproducts['product_id'];
 
+                    $prodname = $rowproducts['product_name'];
+
+                    $desc = $rowproducts['product_desc'];
+
+                    $prodpic = $rowproducts['product_pic'];
+
+                    echo "
+                    
+                        
+                        <div class='row profileviews shadow-lg p-3 mb-5 bg-white rounded'>
+
+                            <div class='col-md-3'>
+        
+                                <div class='box'>
+            
+                                    <div id='favourites'>
+            
+                                        <img src='images/$prodpic' alt='' class='img-responsive'>
+            
+                                    </div>
+            
+                                </div>
+            
+                            </div>
+        
+                            <div class='col-md-6'>
+            
+                                <div class='boxdesc'>
+            
+                                    <h4> $prodname </h4>
+            
+                                    <p> $desc </p>
+            
+                                </div>
+            
+                            </div>
+        
                         </div>
+        
+                    ";
+                }
 
-                    </div>
+            
+            ?>
 
-                </div>
-
-                <div class="col-md-6">
-
-                    <div class="boxdesc">
-
-                        <h4> Purses </h4>
-
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="row profileviews shadow-lg p-3 mb-5 bg-white rounded">
-
-                <div class="col-md-6">
-
-                    <div class="boxdesc">
-
-                        <h4> Purses </h4>
-
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet </p>
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-3">
-
-                    <div class="box">
-
-                        <div id="favourites">
-
-                            <img src="images/cuteblouse.jpeg" alt="" class="img-responsive">
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="row profileviews shadow-lg p-3 mb-5 bg-white rounded">
-
-                <div class="col-md-3">
-
-                    <div class="box">
-
-                        <div id="favourites">
-
-                            <img src="images/cuteblouse.jpeg" alt="" class="img-responsive">
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-6">
-
-                    <div class="boxdesc">
-
-                        <h4> Purses </h4>
-
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet </p>
-
-                    </div>
-
-                </div>
-
-            </div>
         </div>
 
         <div class="col-md-3 sidebar">
