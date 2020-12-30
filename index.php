@@ -117,7 +117,7 @@
             
                 include('includes/db.php');
 
-                $getproducts = "SELECT * FROM `products` WHERE `product_priority` = 1 LIMIT 3";
+                $getproducts = "SELECT * FROM `products` ORDER BY RAND() LIMIT 3";
 
                 $runproducts = mysqli_query($con,$getproducts);
 
@@ -142,7 +142,7 @@
             
                                     <div id='favourites'>
             
-                                        <img src='images/$prodpic' alt='' class='img-responsive'>
+                                        <img style='background-color:white;'src='images/$prodpic' alt='' class='img-responsive'>
             
                                     </div>
             
