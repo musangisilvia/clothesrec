@@ -112,6 +112,7 @@
     <div class="row">
             
         <div class="col-md-9">
+
             <div class="row profileviews shadow-lg p-3 mb-5 bg-white rounded">
 
                 <div class="col-md-3">

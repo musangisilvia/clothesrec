@@ -4,13 +4,33 @@
 
     <h4 style="color:grey;"> Categories </h4>
 
+    <?php
+        
+            include('db.php');
+
+            $getcats = "SELECT * FROM categories";
+
+            $runcats = mysqli_query($con,$getcats);
+
+            while($rowcats = mysqli_fetch_array($runcats)){
+
+                $catname = $rowcats['cat_name'];
+
+                $catid = $rowcats['cat_id'];
+
+                echo "
+                
+                <ul class='list-group'> <!---->
+                    <li class='list-group-item list-group-item-action list-group-item-light'><a href='index.php?$catid'>$catname</a></li>
+                </ul> <!---->
+                
+                ";
+
+            }
+
+        ?>
     
-    <ul class="list-group"> <!---->
-        <li class="list-group-item list-group-item-action list-group-item-light"><a href="#">Jackets</a></li>
-        <li class="list-group-item list-group-item-action list-group-item-light"><a href="#">Hoodies</a></li>
-        <li class="list-group-item list-group-item-action list-group-item-light"><a href="#">Pants</a></li>
-        <li class="list-group-item list-group-item-action list-group-item-light"><a href="#">Shoes</a></li>
-    </ul> <!---->
+   
 
 </div>
 
