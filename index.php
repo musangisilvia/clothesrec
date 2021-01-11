@@ -45,6 +45,8 @@
 
                         $row = mysqli_fetch_array($runinfo);
 
+                        $userid = $row['user_id'];
+
                         $pic = $row['user_picture'];
 
                         $name = $row['user_firstname'];
@@ -142,7 +144,7 @@
             
                                     <div id='favourites'>
             
-                                        <img style='background-color:white;'src='images/$prodpic' alt='' class='img-responsive'>
+                                        <img style='background-color:white;' src='images/$prodpic' alt='' class='img-responsive'>
             
                                     </div>
             
@@ -157,7 +159,11 @@
                                     <h4> $prodname </h4>
             
                                     <p> $desc </p>
-            
+
+                                    <a style='text-align:center;font-size:40px;' href='index.php?prod_id=$prodid'><i style='color: red; text-align:center;font-size:40px;' class='fa fa-heart'></i></a>
+
+                                    <a style='text-align:center;font-size:40px;' href='index.php?prod_id=$prodid'><i  class='fa fa-thumbs-down'></i></a>
+
                                 </div>
             
                             </div>
