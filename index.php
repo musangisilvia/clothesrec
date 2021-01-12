@@ -89,7 +89,7 @@
                 <ul>
                     <li tabindex="0" ><a href="index.php?dashboard" class="active"><span>Dashboard </span><i class="fa fa-dashboard"></i></a></li>
                     <li tabindex="0" ><a href="index.php?explore"><span>Explore </span><i class="fa fa-search"></i></a></li>
-                    <li tabindex="0" ><a href="index.php?fave"><span>Favorites </span><i class="fa fa-heart"></i></a></li>
+                    <li tabindex="0" ><a href="favourites.php"><span>Favorites </span><i class="fa fa-heart"></i></a></li>
                     <li tabindex="0" ><a href="index.php?popular"><span>Popular </span><i class="fa fa-star"></i></a></li>
                     <li tabindex="0" ><a href="logout.php"><span>
                         <?php
