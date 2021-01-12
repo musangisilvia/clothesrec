@@ -160,7 +160,7 @@
             
                                     <p> $desc </p>
 
-                                    <a style='text-align:center;font-size:40px;' href='index.php?prod_id=$prodid'><i style='color: red; text-align:center;font-size:40px;' class='fa fa-heart'></i></a>
+                                    <a style='text-align:center;font-size:40px;' href='favourites.php?prod_id=$prodid'><i style='color: red; text-align:center;font-size:40px;' class='fa fa-heart'></i></a>
 
                                     <a style='text-align:center;font-size:40px;' href='index.php?prod_id=$prodid'><i  class='fa fa-thumbs-down'></i></a>
 

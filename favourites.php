@@ -109,5 +109,40 @@
             </nav>
         </div>
     </div>
+    <div class="row">
+       
+        <?php
+
+            if(isset($_GET['prod_id'])) {
+                $prodid = $_GET['prod_id'];
+
+                
+            }
+
+        ?>
+
+            <div class="col-md-3">
+                <img src="images/accordion.jpg" alt="Accordion Skirt">
+                <h4 style="color:black;">Accordion Skirt <i class="fa fa-heart"></i> </h4>
+            </div>
+
+            <div class="col-md-3">
+                <img src="images/accordion.jpg" alt="Accordion Skirt">
+                <h4>Accordion Skirt <i class="fa fa-heart"></i> </h4>
+            </div>
+
+            <div class="col-md-3">
+                <img src="images/accordion.jpg" alt="Accordion Skirt">
+                <h4>Accordion Skirt <i class="fa fa-heart"></i> </h4>
+            </div>
+
+            <div class="col-md-3 sidebar">
+                <?php
+                
+                    include('includes/sidebar.php');
+                
+                ?>
+            </div>
+    </div>
 </body>
 </html>
